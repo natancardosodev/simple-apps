@@ -7,4 +7,5 @@ npm run start
 ```
 
 ### Acesso
-- http://127.0.0.1:8080/
+- Local: http://127.0.0.1:8080/
+- Demonstração: https://natancardosodev.github.io/simple-apps/
