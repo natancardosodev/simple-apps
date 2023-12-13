@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/natancardosodev/simple-apps/issues"
   },
-  "homepage": "https://github.com/natancardosodev/simple-apps#readme"
+  "homepage": "https://github.com/natancardosodev/simple-apps#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
 }
