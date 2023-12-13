@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rifas</title>
+    <link rel="stylesheet" href="css/tables.css" />
+    <style>
+      p {
+        font-size: 1.3em;
+        padding: 4px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gerador de Rifas</h1>
+    <br />
+
+    <label for="rifas">Qnt de Rifas: </label>
+    <input type="number" name="rifas" value="600" />
+
+    <label for="qnt-de-taloes">Qnt de talões: </label>
+    <input type="number" name="qnt-de-taloes" value="30" />
+    <br /><br />
+
+    <label for="qnt-por-talao">Qnt por talão: </label>
+    <input type="number" name="qnt-por-talao" value="20" />
+
+    <label for="valor-unitario">Valor Unitário: </label>
+    R$<input type="text" name="valor-unitario" style="width: 105px" />
+
+    <button onclick="getRifas()">Gerar</button>
+    <br /><br />
+
+    <div id="valor-total"></div>
+    <div id="result"></div>
+    <br />
+
+    <script src="js/rifas.js"></script>
+  </body>
+</html>

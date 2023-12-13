@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gerador de Tabela e CSV</title>
+    <link rel="stylesheet" href="css/tables.css" />
+  </head>
+  <body>
+    <h1>Gerador de Tabela e CSV</h1>
+    <br />
+
+    <label for="nomes">Classes: </label>
+    <input type="text" value="Valentes de Gideão, Obreiros Ministros, Jardim de Deus, Mulheres, Jeová Nissi, Jovens, Díscipulos de Jesus, Discipulado, Homens de Bereia, Obreiros Auxiliares, Pequeninos de Cristo, Crianças" name="nomes" placeholder="Insira separado por vírgula" />
+
+    <label for="ano">Domingos de: </label>
+    <input id="ano" type="text" name="ano" value="2024" />
+
+    <button onclick="getNomes(); getNomes2()">Gerar</button>
+    <br /><br />
+
+    <table id="data-table">
+      <tr>
+        <th>Dia</th>
+      </tr>
+    </table>
+
+    <table id="data-table2">
+      <tr>
+        <th>Classe</th>
+        <th>Referencia</th>
+        <th>Mes</th>
+        <th>Dia1</th>
+        <th>Dia2</th>
+        <th>Dia3</th>
+        <th>Dia4</th>
+        <th>Dia5</th>
+      </tr>
+    </table>
+
+    <footer>
+      <button
+        type="button"
+        class="btn"
+        style="display: none"
+        onclick="tableToCSV('data-table', 'domingos')"
+      >
+        Download CSV Domingos
+      </button>
+
+      <button
+        type="button"
+        class="btn test"
+        style="display: none"
+        onclick="tableToCSV('data-table2', 'relatorio-geral')"
+      >
+        Download CSV Relatório Geral
+      </button>
+    </footer>
+
+    <script src="js/tables.js"></script>
+  </body>
+</html>

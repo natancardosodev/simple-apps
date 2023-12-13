@@ -1,0 +1,20 @@
+{
+  "name": "simple-apps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/http-server ./public -p 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natancardosodev/simple-apps.git"
+  },
+  "author": "Natan Cardoso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/natancardosodev/simple-apps/issues"
+  },
+  "homepage": "https://github.com/natancardosodev/simple-apps#readme"
+}
